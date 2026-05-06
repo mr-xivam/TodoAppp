@@ -5,7 +5,8 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/mr-xivam/TodoAppp.git'
+                git branch: 'main',
+                url: 'https://github.com/mr-xivam/TodoAppp.git'
             }
         }
 
